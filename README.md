@@ -17,10 +17,50 @@ Have the following installed.
 - Webpack
 - Git Bash (any command line will do. However, I'm used to Git Bash.)
 
-# Step 1: Starting Your Project
- Open up your command line and cd into the folder in which you would like to create your project. It can be anywhere, but it's recommended that it be somewhere you can easily access. I create a folder on my desktop for each project.
+# Step 1: Creating Your Project Folder
+Open your command line and cd into the folder in which you would like to create your project. It can be anywhere, but it's recommended that it be somewhere you can easily access. I create a folder on my desktop for each project.
  
  ```
  cd /c/Users/Desktop/<project_folder>
  ```
+ ###Note:
+ This is NOT the folder in which I will begin coding the project. This contains notes, outlines, and other musings. The actuall application will be in the following folder within this one. 
  
+ So I create a new folder and cd into that.
+ ```
+ mkdir <folder_name>
+ cd <folder_name>
+ ```
+# Step 2: Your First File
+If I've planned the project properly, I know most -if not all- of the packages I'll be using. It's okay not to have a complete idea of some of the more superficial packages like bootstrap-react or materialize, but since we know this is going to be a MERN project we can assume a few things, which leads us to our first file, package.json.
+
+```
+npm init
+```
+Go through the defaul settings. This creates the package.json file, which is the file I start for all of my projects because it documents and stores all of our dependancies. This is where the acronym of MERN comes in.
+
+M for MongoDB (won't be needed for this static page, but we'll install it anyways.)
+```
+npm install --save mongodb
+```
+E for Express
+```
+npm install --save express
+```
+R for React
+```
+npm install --save react react-dom
+```
+And N for Nodejs, which we should already have as we're using it as we speak
+
+This is where the acronym comes from. For those of you who jumped into the deep end and attempted to create a MERN application via 'npm install -g mern-cli' and then 'mern init your_new_app' you've surely seen much much more in the package.json file than this. 
+
+
+dev
+webpack
+babel-core
+babel-loader
+babel-preset-es2015
+babel-preset-react
+nodemon
+eslint
